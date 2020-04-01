@@ -1,7 +1,6 @@
 // JavaScript Task 2
 // Deadline: Apr 9, 2020 12:00 AM
 // Description
-
 // First create an array of objects called data with the following values:
 
 // 1. Principal- 2500, time- 1.8
