@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggyvest | Dashboardt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #062863;
+            font-family: 'Karla', sans-serif;
+        }
+        .login_section{
+            margin:0 auto;
+            text-align: center;
+        }
+        .head_section{
+            margin-bottom: 36px;
+            text-align: center;
+        }
+        .head_title{
+            font-family: 'Raleway', sans-serif;
+            color: #083e9e;
+            line-height: 36px;
+        }
+        .sub_title{
+            line-height: 21px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .logo_head{
+            margin: 48px auto;
+        }
+        .container{
+            width: 450px;
+            padding:40px;
+            border-radius: 15pt 15pt 15pt 0 ;
+            background-color: #fff;
+            color: #4a5568;
+            min-height: 100vh;
+            margin:auto;
+        }
+        .form_section{
+            text-align: start;
+        }
+        .label{
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+        .field{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #1a202c;
+            background-color: #edf2f7;
+            padding: 16px;
+            border: 0 solid #edf2f7;
+            border-radius: 5pt;
+            width: 100%;
+        }
+        input::placeholder{
+            color: #6a849e ;
+            opacity: 0.8;
+        }
+        .inp_group{
+            margin-bottom: 20pt;
+        }
+        select{
+            
+            color: #1a202c;
+        }
+        select::selection{
+            height: 10px;
+            overflow: scroll;
+        }
+        .btn{
+            background-color: #083E9E;
+            font-family: 'Raleway', sans-serif;
+            border-radius: 7pt 7pt 7pt 0 ;
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: -10px !important;
+        }
+        .btn:hover{
+            background-color: #062863;
+            transition: all 0.5s ease-in-out;
+        }
+        .log_in{
+            text-decoration: none;
+            color: #edf2f7;
+            background-color: transparent;
+            font-weight: 200 !important;
+            font-size: 12px;
+            font-family: 'Karla', sans-serif ;
+        }
+        .log_in:hover{
+            color: #6a849e;
+        }
+    </style>
+</head>
+<body>
+    <section class="login_section">
+        <div class="logo_head">
+            <img src="images/logo.svg" alt="PiggyVest">
+        </div>
+        <div class="container">
+            <div class="head_section">
+                <h2 class="head_title">Create a Secure Account</h2>
+                <h4 class="sub_title">Welcome to the future of Savings & Investments</h4>
+            </div>
+            <div class="form_section">
+                <div class="inp_group">
+                    <h4 class="label">Full Name</h4>
+                    <input type="text" name="f_name" value="" placeholder="Full Name" class="field">
+                </div>
+                <div class="inp_group">
+                    <h4 class="label">Email Address</h4>
+                    <input type="email" name="email" value="" placeholder="Email Address" class="field">
+                </div>
+                <div class="inp_group">
+                    <h4 class="label">Phone Number</h4>
+                    <input type="tel" name="phone" value="" placeholder="Phone Number" class="field">
+                </div>
+                <div class="inp_group">
+                    <h4 class="label">Password</h4>
+                    <input type="password" name="password" value="" placeholder="Password" class="field">
+                </div>
+                <div class="inp_group">
+                    <h4 class="label">Referrer Phone or Promo Code (Optional)</h4>
+                    <input type="text" name="ref" value="" placeholder="Referrer Phone or Code" class="field">
+                </div>
+                <div class="inp_group">
+                    <h4 class="label">How Did You Hear About Us? (Optional)</h4>
+                    <select class="field" name="how" id="how">
+                        <option value="" disabled selected>Click to select</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Friends/Family/Collegue">Friends/Family/Collegue</option>
+                        <option value="Google Search">Google Search</option>
+                        <option value="Google Playstore">Google Playstore</option>
+                    </select>
+                </div>
+                <div class="inp_group">
+                    <input type="button" name="submit" value="Create an Account" placeholder="Referrer Phone or Code" class="field btn">
+                </div>
+            </div>
+            </div>
+            <a class="field log_in" href="https://dashboard.piggyvest.com/login"><h4>Already have an account? Log In</h4></a>
+        
+    </section>
+    
+</body>
+</html>
