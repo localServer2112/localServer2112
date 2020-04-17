@@ -1,161 +1,195 @@
+<!-- Your bio-data e.g( name, state of origin, date of birth, address, occupation,home town, slack ID,picture)
+A summary about yourself (must include your hobbies and interests).
+Add a contact form at the bottom of your page. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piggyvest | Dashboardt</title>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: #062863;
-            font-family: 'Karla', sans-serif;
-        }
-        .login_section{
-            margin:0 auto;
-            text-align: center;
-        }
-        .head_section{
-            margin-bottom: 36px;
-            text-align: center;
-        }
-        .head_title{
-            font-family: 'Raleway', sans-serif;
-            color: #083e9e;
-            line-height: 36px;
-        }
-        .sub_title{
-            line-height: 21px;
-            font-size: 14px;
-            font-weight: 400;
-        }
-        .logo_head{
-            margin: 48px auto;
-        }
-        .container{
-            width: 450px;
-            padding:40px;
-            border-radius: 15pt 15pt 15pt 0 ;
-            background-color: #fff;
-            color: #4a5568;
-            min-height: 100vh;
-            margin:auto;
-        }
-        .form_section{
-            text-align: start;
-        }
-        .label{
-            font-size: 12px;
-            line-height: 24px;
-            margin-bottom: 0.5em;
-            font-weight: 700;
-        }
-        .field{
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-            color: #1a202c;
-            background-color: #edf2f7;
-            padding: 16px;
-            border: 0 solid #edf2f7;
-            border-radius: 5pt;
-            width: 100%;
-        }
-        input::placeholder{
-            color: #6a849e ;
-            opacity: 0.8;
-        }
-        .inp_group{
-            margin-bottom: 20pt;
-        }
-        select{
-            
-            color: #1a202c;
-        }
-        select::selection{
-            height: 10px;
-            overflow: scroll;
-        }
-        .btn{
-            background-color: #083E9E;
-            font-family: 'Raleway', sans-serif;
-            border-radius: 7pt 7pt 7pt 0 ;
-            color: #fff;
-            cursor: pointer;
-            margin-bottom: -10px !important;
-        }
-        .btn:hover{
-            background-color: #062863;
-            transition: all 0.5s ease-in-out;
-        }
-        .log_in{
-            text-decoration: none;
-            color: #edf2f7;
-            background-color: transparent;
-            font-weight: 200 !important;
-            font-size: 12px;
-            font-family: 'Karla', sans-serif ;
-        }
-        .log_in:hover{
-            color: #6a849e;
-        }
-    </style>
+    <title>Fawale Timilehin || Profile Page</title>
+    <link rel="stylesheet" media="screen and (max-width:760px)" href="css/mobile.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="login_section">
-        <div class="logo_head">
-            <img src="images/logo.svg" alt="PiggyVest">
+    <section class="main-sec _col">
+        <div class="_col container center hero">
+            <h1>Hi</h1>
+            <h3>I am Timmy</h3>
+            <p>This is not a regular profile.<br/> Or is it?</p>
+            <div class="_row handles">
+                <img src="images/Icon awesome-github.svg" alt="">
+                <img src="images/Icon awesome-twitter.svg" alt="">
+                <img src="images/Icon simple-slack.svg" alt="">
+                <img src="images/Icon ionic-ios-mail.svg" alt="">
+            </div>
+            <div class="_col container center point-down">
+                <img src="images/Icon awesome-angle-double-down.svg" alt="">  
+            </div>
         </div>
-        <div class="container">
-            <div class="head_section">
-                <h2 class="head_title">Create a Secure Account</h2>
-                <h4 class="sub_title">Welcome to the future of Savings & Investments</h4>
+        <!-- <div class="_col m-brief">
+            <h2>Fawale Timilehin</h2>
+            <p>I am a proactive, forward-thinking, goal-oriented individual that has passion for technology and its use for creative problem solving.</p>
+        </div> -->
+        <div class="_col container">
+            <div class="_row">
+                <div class="_col brief">
+                            <!-- <h2>Fawale Timilehin</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat tenetur eveniet aliquid praesentium nesciunt dignissimos consequuntur quasi temporibus vero nulla?</p> -->
+                        </div>
+                        <div class="_col brief">
+                            <h2>Fawale Timilehin</h2>
+                            <p>I am a proactive, forward-thinking, goal-oriented individual that has passion for technology and its use for creative problem solving.</p>
+                        </div>
+                    </div>
             </div>
-            <div class="form_section">
-                <div class="inp_group">
-                    <h4 class="label">Full Name</h4>
-                    <input type="text" name="f_name" value="" placeholder="Full Name" class="field">
-                </div>
-                <div class="inp_group">
-                    <h4 class="label">Email Address</h4>
-                    <input type="email" name="email" value="" placeholder="Email Address" class="field">
-                </div>
-                <div class="inp_group">
-                    <h4 class="label">Phone Number</h4>
-                    <input type="tel" name="phone" value="" placeholder="Phone Number" class="field">
-                </div>
-                <div class="inp_group">
-                    <h4 class="label">Password</h4>
-                    <input type="password" name="password" value="" placeholder="Password" class="field">
-                </div>
-                <div class="inp_group">
-                    <h4 class="label">Referrer Phone or Promo Code (Optional)</h4>
-                    <input type="text" name="ref" value="" placeholder="Referrer Phone or Code" class="field">
-                </div>
-                <div class="inp_group">
-                    <h4 class="label">How Did You Hear About Us? (Optional)</h4>
-                    <select class="field" name="how" id="how">
-                        <option value="" disabled selected>Click to select</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Twitter">Twitter</option>
-                        <option value="Friends/Family/Collegue">Friends/Family/Collegue</option>
-                        <option value="Google Search">Google Search</option>
-                        <option value="Google Playstore">Google Playstore</option>
-                    </select>
-                </div>
-                <div class="inp_group">
-                    <input type="button" name="submit" value="Create an Account" placeholder="Referrer Phone or Code" class="field btn">
-                </div>
-            </div>
-            </div>
-            <a class="field log_in" href="https://dashboard.piggyvest.com/login"><h4>Already have an account? Log In</h4></a>
-        
+        <!-- </div> -->
     </section>
-    
+    <section class="about-sec">
+        <div class="_col container">
+                <div class="_row">
+                    <div class="_col profile-img">
+                        <img src="images/pic.jpg" alt="">    
+                    </div>
+                    <div class="_col links">
+                        <ul class="_row">
+                            <li><a href="#info">Basic Info</a></li>
+                            <li><a href="#interest">Interests</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </section>
+    <section id="info">
+        <div class="tag container">
+            <h2>01</h2>
+            <div class="divider">
+            </div>
+            <h1>Basic Profile</h1>
+        </div>
+        <div class="info-area container">
+            <div class="container _col">
+                <div class="bar _row">
+                    <div class="detail">
+                        <h3>Fawale Oluwatimilehin</h3>
+                    </div>
+                    <div class="label">
+                        Fullname
+                    </div>
+                </div>
+                <hr>
+                <div class="bar _row">
+                    <div class="detail">
+                        <h3>Osun State</h3>
+                    </div>
+                    <div class="label">
+                        State Of Origin
+                    </div>
+                </div>
+                <hr>
+                <div class="bar _row">
+                    <div class="detail">
+                        <h3>21-12-1996</h3>
+                    </div>
+                    <div class="label">
+                        Date Of Birth
+                    </div>
+                </div>
+                <hr>
+                <div class="bar _row">
+                    <div class="detail">
+                        <h3>Ogo-oluwa, Osogbo, Osun state</h3>
+                    </div>
+                    <div class="label">
+                        Address
+                    </div>
+                </div>
+                <hr>
+                <div class="bar _row">
+                    <div class="detail">
+                        <h3>Software designer | Student</h3>
+                    </div>
+                    <div class="label">
+                        Occupation
+                    </div>
+                </div>
+                <hr>
+                <div class="bar _row">
+                    <div class="detail">
+                        <h3>Ile Ife</h3>
+                    </div>
+                    <div class="label">
+                        Home Town
+                    </div>
+                </div>
+                <hr>
+                <div class="bar _row">
+                    <div class="detail">
+                        <h3>localServer2112</h3>
+                    </div>
+                    <div class="label">
+                        Slack ID
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="interest">
+        <div class="container">
+            <div class="tag">
+                <h2>02</h2>
+                <div class="divider">
+                </div>
+                <h1>Interests</h1>
+            </div>
+            <div class="interest-area container">
+                <div class="_row card">
+                    <div class="pills">
+                        Design
+                    </div>
+                    <div class="pills">
+                        Creative Thinking
+                    </div>
+                    <div class="pills">
+                        Conspiracy Theories
+                    </div>
+                    <div class="pills">
+                        Sports
+                    </div>
+                    <div class="pills">
+                        Psychology
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="tag">
+                <h2>03</h2>
+                <div class="divider">
+                </div>
+                <h1>Contact</h1>
+            </div>
+            <div class="contact-card container _col">
+                <h4>Leave me a message </h4>
+                <div class="_row form-grp">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="_row form-grp">
+                    <textarea name="message" placeholder="Your message" id="msg" cols="30" rows="10"></textarea>
+                </div>
+                <div class="_row form-grp btn">
+                    SEND
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
 </body>
 </html>
