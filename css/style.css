@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  background-color: #232323;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  height: 1px;
+  opacity: 0.6;
+  margin: 3pt auto;
+  width: 80%;
+  text-align: left;
+}
+
+._row {
+  display: flex;
+  flex-direction: row;
+}
+
+._col {
+  display: flex;
+  flex-direction: column;
+}
+
+.start {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.end {
+  align-items: flex-end;
+}
+
+.center {
+  align-items: center;
+}
+
+.vcenter {
+  justify-content: space-around;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  .main-sec {
+    font-size: 14px;
+  }
+  .main-sec .brief {
+    display: none;
+    flex-direction: row;
+  }
+  .main-sec .m-brief {
+    display: flex;
+  }
+  .about-sec {
+    width: 100%;
+    font-size: 14pt;
+  }
+  .about-sec .profile-img {
+    display: none;
+  }
+  .about-sec .links {
+    font-size: 8pt;
+  }
+  #info {
+    min-height: 30vh;
+    background-color: #04010F;
+    color: #ffffff;
+  }
+  #info .info-area {
+    min-height: 30vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #info .info-area .bar {
+    background-color: #ffffff;
+    height: 12vh;
+    border-bottom: 1px solid #ffffff;
+  }
+  #info .info-area .bar .detail {
+    display: flex;
+    flex: 1;
+    font-size: 8px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height: inherit;
+    text-align: center;
+    background-color: #090222;
+    font-weight: 200;
+  }
+  #info .info-area .bar .label {
+    display: flex;
+    font-size: 8px;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    background-color: #160552;
+    font-weight: 200;
+  }
+}
+
+.tag h2 {
+  color: #F36900;
+}
+
+.tag h1 {
+  font-size: 28pt;
+}
+
+.tag .divider {
+  background-color: #F36900;
+  width: 10%;
+  height: 1pt;
+}
+
+.main-sec {
+  z-index: 1;
+  min-height: 70vh;
+  display: flex;
+  margin: 70pt 0 0 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-sec .hero {
+  color: #ffffff;
+  margin: 40pt auto;
+  transition: color 0.6 ease-in-out;
+}
+
+.main-sec .hero h1 {
+  font-size: 30pt;
+  margin: 20pt auto;
+}
+
+.main-sec .hero h3 {
+  font-size: 16pt;
+}
+
+.main-sec .hero p {
+  text-align: center;
+  margin: 30pt auto;
+}
+
+.main-sec .hero .handles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 30pt auto;
+}
+
+.main-sec .hero .handles img {
+  width: 24px;
+  height: 24px;
+}
+
+.main-sec .hero .point-down {
+  margin: 30pt auto;
+}
+
+.main-sec .hero .point-down img {
+  width: 24px;
+  height: 24px;
+}
+
+.main-sec .brief {
+  display: flex;
+  margin: 100pt 0 10pt 0;
+  flex: 1;
+  flex-basis: 70%;
+  color: #ffffff;
+  padding: 0 30pt;
+}
+
+.main-sec .brief p {
+  text-align: left;
+  font-weight: 300;
+}
+
+.main-sec .brief h2 {
+  text-align: left;
+}
+
+.m-brief {
+  display: none;
+  color: #ffffff;
+  align-items: center;
+}
+
+.m-brief p {
+  text-align: center;
+}
+
+.about-sec {
+  min-height: 50vh;
+  z-index: 2;
+  display: flex;
+  background-color: #04010F;
+}
+
+.about-sec .profile-img {
+  margin-top: -20%;
+  flex-basis: 50%;
+}
+
+.about-sec .profile-img img {
+  width: 100%;
+}
+
+.about-sec .links {
+  color: #F36900;
+  flex: 1;
+  padding: 05pt 30pt;
+}
+
+.about-sec .links ul {
+  padding: 0 20pt 0 0;
+  justify-content: space-between;
+}
+
+.about-sec .links ul li {
+  list-style: none;
+}
+
+.about-sec .links ul li a {
+  text-decoration: none;
+  color: #F36900;
+  font-weight: 300;
+}
+
+.about-sec .links ul li a:hover {
+  color: #c05300;
+  transition: color 0.5s ease-in-out;
+}
+
+#info {
+  min-height: 30vh;
+  background-color: #04010F;
+  color: #ffffff;
+}
+
+#info .info-area {
+  min-height: 30vh;
+  padding: 10vh 0;
+}
+
+#info .info-area .bar {
+  background-color: #ffffff;
+  height: 10vh;
+  border-bottom: 1px solid #ffffff;
+}
+
+#info .info-area .bar .detail {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  height: inherit;
+  background-color: #090222;
+}
+
+#info .info-area .bar .label {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  background-color: #160552;
+  font-weight: 300;
+}
+
+#interest {
+  min-height: 30vh;
+  background-color: #04010F;
+  color: #ffffff;
+  padding: 30pt 0 80pt 0;
+}
+
+#interest .card {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#interest .card .pills {
+  height: 10vh;
+  width: 18vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  margin: 12pt;
+  border: 1px solid #f37d00;
+}
+
+#interest .card .pills:nth-child(1) {
+  border: 1px solid #f3ba00;
+}
+
+#interest .card .pills:nth-child(2) {
+  border: 1px solid #f3e300;
+}
+
+#interest .card .pills:nth-child(3) {
+  border: 1px solid #dbf300;
+}
+
+#interest .card .pills:nth-child(4) {
+  border: 1px solid #b3f300;
+}
+
+#contact {
+  min-height: 70vh;
+  padding: 30pt 0;
+  color: #ffffff;
+}
+
+#contact .contact-card {
+  margin: 30pt auto;
+  padding: 30pt 60pt;
+  background-color: #ffffff;
+  min-height: 60vh;
+  box-shadow: 1px 1px 5px 1px #000000;
+  overflow: hidden;
+}
+
+#contact .contact-card h4 {
+  margin: 10pt auto;
+  color: #04010F;
+  text-align: center;
+}
+
+#contact .contact-card .btn {
+  cursor: pointer;
+  background-color: #F36900;
+  color: #ffffff;
+  flex: 1;
+  margin: 10pt auto;
+  padding: 5pt 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5vh;
+}
+
+#contact .contact-card .btn:hover {
+  background-color: #da5e00;
+  transition: background-color 0.4s ease-in-out;
+}
+
+#contact .contact-card .form-grp {
+  display: flex;
+}
+
+#contact .contact-card .form-grp input {
+  margin: 20px 0;
+  flex: 1;
+  padding: 10px 05px;
+  border: 0;
+  margin-right: 5pt;
+  border-bottom: 1px solid #ff8427;
+}
+
+#contact .contact-card .form-grp textarea {
+  flex: 1;
+  background-color: #fff8f3;
+  height: 20vh;
+  padding: 10px 5px;
+}
